@@ -1,13 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <main-tabbar></main-tabbar>
+    <router-view></router-view>
   </div>
 </template>
 
-<style>
-@import './css/basecss.css'
-</style>
+<script>
+  import mainTabbar from 'components/content/mainTabbar'
+  export default {
+    components: {
+      mainTabbar
+    }
+  }
+
+</script>
+
+<style scoped>
+  @import 'css/basecss.css';
+  #div {
+    background-color: pink;
+  }
+
+</style>>
+  
+
+
